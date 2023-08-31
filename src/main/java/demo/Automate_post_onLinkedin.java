@@ -52,27 +52,27 @@ public class Automate_post_onLinkedin {
         // System.out.println("Impressions count : "+impressions.getText());
         // // Click the 'Start post' Input field Using Locator "ID" //*[@id="ember605"]/div/div[2]/span/strong
         Thread.sleep(2000);
-        driver.findElement(By.xpath("/html/body/div[5]/div[3]/div/div/div[2]/div/div/main/div[2]/div[2]/div[2]/button")).click();
+        driver.findElement(By.xpath("//span[text() = 'Start a post']/../..")).click();
         
         // Click on "post to anyone' button Using Locator "ID" id='ember1052'
-        driver.findElement(By.xpath("/html/body/div[3]/div/div/div/div[1]/div/h2/button/div/div[2]/div[2]")).click();
+        driver.findElement(By.xpath("//*[@href ='#caret-medium']")).click();
         // Choose the 'connections only' radio button Using Locator "Class" Name 
         driver.findElement(By.xpath("//*[@id='CONNECTIONS_ONLY']/span[3]")).click();
 
         Thread.sleep(2000);
         // Click on Done button Using Locator "ID" id = 'ember1089'
-        driver.findElement(By.xpath("/html/body/div[3]/div/div/div/div[2]/div/div[2]/div/button[2]/span")).click();
+        driver.findElement(By.xpath("//span[text() ='Done']")).click();
         Thread.sleep(2000);
         // Send Posts text using sendKeys() function Using Locator "XPath" //div[@class = 'editor-container relative']
         WebElement post = driver.findElement(By.xpath("//div[@class = 'editor-container relative']//p"));
         post.click();
-        post.sendKeys("My first automated post");
+        post.sendKeys("My second automated post");
         Thread.sleep(2000);
         // Click on Post Button Using Locator "ID" id = 'ember1122'
-        driver.findElement(By.xpath("/html/body/div[3]/div/div/div/div[2]/div/div[2]/div[2]/div[2]/div/div[2]/button")).click();
+        driver.findElement(By.xpath("//span[text() = 'Post']")).click();
         Thread.sleep(2000);
         //Verify if post is posted
-        boolean posted = driver.findElement(By.xpath("//*[contains(text(), 'My first automated post')]")).isDisplayed();
+        boolean posted = driver.findElement(By.xpath("//*[contains(text(), 'My second automated post')]")).isDisplayed();
         System.out.println("Your post is posted : "+ posted);
     }
 

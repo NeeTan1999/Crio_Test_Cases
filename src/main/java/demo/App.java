@@ -10,8 +10,8 @@ public class App {
         //TestCases tests = new TestCases(); // Initialize your test class
         //Search_Amazon search = new Search_Amazon();
         //Count_Hyperlinks hyperlinks = new Count_Hyperlinks();
-        //Automate_post_onLinkedin linkedin = new Automate_post_onLinkedin();
-        Automate_image_urls images = new Automate_image_urls();
+        Automate_post_onLinkedin linkedin = new Automate_post_onLinkedin();
+        // Automate_image_urls images = new Automate_image_urls();
         //Automate_nested_frames_text frames = new Automate_nested_frames_text();
         //Automate_imdb_ratings imdb = new Automate_imdb_ratings();
         //Automate_window_handle window = new Automate_window_handle();
@@ -21,8 +21,8 @@ public class App {
         //tests.testCase01();
         //search.AmazonSearch();
         //hyperlinks.hyperlinksCount();
-        //linkedin.linkedinPost();
-        images.imageUrl();
+        linkedin.linkedinPost();
+        // images.imageUrl();
         //frames.nestedFrames();
         //imdb.imdbRatings();
         //window.windowHandle();
@@ -33,8 +33,8 @@ public class App {
         //tests.endTest(); // End your test by clearning connections and closing browser
         //search.endTest();
         //hyperlinks.endTest();
-        // linkedin.endTest();
-        images.endTest();
+        linkedin.endTest();
+        // images.endTest();
         //frames.endTest();
         //imdb.endTest();
         //window.endTest();
